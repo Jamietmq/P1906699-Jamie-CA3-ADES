@@ -69,9 +69,10 @@ const Login = ({ navigation }) => {
       });
   };
 
+
 const handleMessage = (message, type = 'FAILED') => { // if no message is added, default failed
   setMessage(message);
-  messageType(type);
+  setmessageType(type);
 };
 
 // The top section heading follow by form 
@@ -124,7 +125,7 @@ return (
 
             <MsgBox type={messageType}>{message}</MsgBox>
 
-            {!isSubmitting && (
+            {/* {!isSubmitting && (
             <StyledButton onPress={handleSubmit}>
               <ButtonText>Login</ButtonText>
             </StyledButton>
@@ -134,7 +135,11 @@ return (
             <StyledButton disabled={true}> 
               <ActivityIndicator size="large" color={primary}/> 
             </StyledButton>
-            )}
+            )} */}
+
+          <StyledButton onPress={() => navigation.navigate('Welcome')}>
+              <ButtonText>Login</ButtonText>
+            </StyledButton>
 
             <Line />
 

@@ -15,7 +15,7 @@ import {
 
 // Back button to go back
 const Welcome = ({ navigation, route }) => {
-  const { name } = route.params;
+  // const { name } = route.params;
   return (
     <>
       <StatusBar style="dark" /> 
@@ -24,7 +24,7 @@ const Welcome = ({ navigation, route }) => {
 
         <WelcomeContainer>
           <PageTitle welcome={true}>Let's Be Productive!</PageTitle>
-          <SubTitle welcome={true}>{name || 'Park Jimin'}</SubTitle>
+          {/* <SubTitle welcome={true}>{name || 'Park Jimin'}</SubTitle> */}
 
           <StyledFormArea>
             <StyledButton google={true} onPress={() => navigation.navigate ('Planner')}>
