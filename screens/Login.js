@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 
-// Using Formik
+// Using Formik !
 import { Formik } from 'formik';
 
 import {
@@ -46,7 +46,7 @@ const Login = ({ navigation }) => {
 
   const handleLogin = (credentials, setSubmitting) => {
     handleMessage(null); // clear the old message when button is pressed
-    const url = 'mongodb+srv://dbJamie:<password>@cluster0.ihhtq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+    const url = 'mongodb+srv://dbJamie:3j9qFLlUQuM0w5Mb@cluster0.ihhtq.mongodb.net/dbJamie?retryWrites=true&w=majority';
 
     // POST -----------------------------------------------------------------------------------------
     axios
